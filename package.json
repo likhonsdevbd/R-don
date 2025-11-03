@@ -1,19 +1,22 @@
 {
-  "name": "rudon-chatbot",
+  "name": "code-interpreter-agent",
   "version": "1.0.0",
-  "description": "Rüdon - Intelligent AI bot that answers questions and chats naturally.",
-  "main": "index.js",
+  "description": "A code interpreter agent that can create and execute plans.",
+  "main": "dist/code-interpreter.js",
   "scripts": {
-    "start": "node index.js",
-    "start:codestral": "node index-codestral.js"
+    "build": "tsc",
+    "start": "node dist/code-interpreter.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@ai-sdk/huggingface": "^0.0.3",
-    "ai": "^3.2.14",
+    "@e2b/code-interpreter": "^0.0.6",
     "@mistralai/mistralai": "^0.1.0",
-    "readline-sync": "^1.4.10"
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3"
   }
 }
