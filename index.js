@@ -15,6 +15,10 @@ async function main() {
       break;
     }
 
+    if (!userInput) {
+      continue;
+    }
+
     const { text } = await generateText({
       model,
       prompt: userInput,

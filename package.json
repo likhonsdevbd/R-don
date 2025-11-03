@@ -4,7 +4,8 @@
   "description": "Rüdon - Intelligent AI bot that answers questions and chats naturally.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:codestral": "node index-codestral.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "dependencies": {
     "@ai-sdk/huggingface": "^0.0.3",
     "ai": "^3.2.14",
+    "@mistralai/mistralai": "^0.1.0",
     "readline-sync": "^1.4.10"
   }
 }
